@@ -1,0 +1,1025 @@
+/* ================A U T H E R   I N F O ================*/
+/* Author: Mehedi Hassan Shifat 
+ * Email: mehedihassanshifat01@gmail.com
+ * Website: www.codecafebd.tk
+*/
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700,800|Playfair+Display:400,700,900");
+
+/* Global CSS */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Lato", sans-serif;
+  font-family: "Playfair Display", serif; */
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Header CSS */
+
+#header {
+  width: 100%;
+  height: auto;
+  padding: 4.8rem 0;
+  background: #ffffff;
+}
+
+.navbar-link {
+  font-size: 1.4rem;
+  color: #111111;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin-left: 2rem;
+}
+
+.navbar-link:hover {
+  color: #e8bf5d;
+}
+
+.hamburger-menu {
+  background: #e8bf5d;
+  padding: 0.6rem;
+}
+
+.hamburger-bars {
+  background: #ffffff;
+  display: block;
+  height: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hamburger-bars:last-child {
+  margin-bottom: 0;
+}
+
+.current {
+  position: relative;
+}
+
+.current::after {
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 3.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 4px solid #e8bf5d;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-toggler-box {
+    padding: 2rem 0;
+    background: #ffffff;
+  }
+
+  .current::after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: none;
+  }
+
+  .current {
+    border-left: 3px solid #e8bf5d;
+  }
+
+  .navbar-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    padding: 0 2rem !important;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Hero CSS */
+
+#hero {
+  width: 100%;
+  height: calc(100vh - 139px);
+  background: url("../images/hero.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-content-wrapper {
+  width: 100%;
+  height: calc(100vh - 139px);
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 100%;
+  height: auto;
+  padding: 135px 0;
+  overflow: hidden;
+}
+
+.hero-content-box {
+  width: 100%;
+  height: auto;
+  border-left: 1px solid #e8bf5d;
+  padding: 0 2rem;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  margin-left: 10rem;
+}
+
+.hero-name {
+  font-size: 5rem;
+  margin-top: -10px;
+}
+
+.hero-occupation {
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.link-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-link {
+  font-family: "Playfair Display", serif;
+  background: #e8bf5d;
+  color: #111111;
+  font-size: 1.6rem;
+  padding: 1.2rem 4.5rem;
+  display: inline-block;
+  border-radius: 5rem;
+  font-weight: 700;
+}
+
+.hero-link:hover {
+  background: #111111;
+  color: #e8bf5d;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero-content-box {
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    width: 100%;
+    height: auto;
+  }
+  .hero-content {
+    padding: 5rem;
+  }
+  .hero-content-box {
+    margin-left: 0;
+    border-left: 0;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}
+
+/* About Section CSS */
+
+#about {
+  width: 100%;
+  height: auto;
+  padding: 9.5rem 0;
+  overflow: hidden;
+}
+
+.about-header {
+  border-left: 1px solid #e8bf5d;
+  padding: 0 1.5rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.about-header::before {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  content: "01";
+  color: #f3f3f3;
+  font-size: 15rem;
+  z-index: -1;
+}
+
+.about-header-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #111111;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-header-desc {
+  font-family: "Playfair Display", serif;
+  width: 50%;
+  color: #666666;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.history-title,
+.expertise-title {
+  font-family: "Playfair Display", serif;
+  color: #111111;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.history-item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.history-item:last-child {
+  margin-bottom: 0;
+}
+
+.history-date {
+  width: 10rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.history-date-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.history-desc {
+  width: calc(100% - 10rem);
+  height: auto;
+}
+
+.history-desc-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.expertise-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  color: #666666;
+  line-height: 2.6rem;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 995px) {
+  .about-header-desc {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .custom-mb {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about-header-desc {
+    width: 100%;
+  }
+}
+
+/* Practice CSS */
+
+#practice {
+  width: 100%;
+  height: auto;
+  padding: 9.5rem 0;
+  overflow: hidden;
+  background: #111111;
+}
+
+.practice-header {
+  border-left: 1px solid #e8bf5d;
+  padding: 0 1.5rem;
+  position: relative;
+  margin-bottom: 4rem;
+  z-index: 5;
+}
+
+.practice-header::before {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  content: "02";
+  color: #1d1d1d;
+  font-size: 15rem;
+  z-index: -1;
+}
+
+.practice-header-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.practice-header-desc {
+  font-family: "Playfair Display", serif;
+  width: 50%;
+  color: #b9b9b9;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.practice-item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.practice-item:last-child {
+  margin-bottom: 0;
+}
+
+.practice-icon {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+.practice-icon i {
+  color: #e8bf5d;
+}
+
+.practice-item-content {
+  width: calc(100% - 5rem);
+  height: auto;
+  overflow: hidden;
+}
+
+.practice-content-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.practice-content-desc {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+@media only screen and (max-width: 995px) {
+  .practice-header-desc {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .practice-header-desc {
+    width: 100%;
+  }
+}
+
+/* Team Section CSS */
+
+#team {
+  width: 100%;
+  height: auto;
+  padding: 9.5rem 0;
+  overflow: hidden;
+}
+
+.team-header {
+  border-left: 1px solid #e8bf5d;
+  padding: 0 1.5rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.team-header::before {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  content: "03";
+  color: #f3f3f3;
+  font-size: 15rem;
+  z-index: -1;
+}
+
+.team-header-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #111111;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.team-header-desc {
+  font-family: "Playfair Display", serif;
+  width: 50%;
+  color: #666666;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.team-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.team-item-img {
+  margin-bottom: 2rem;
+}
+
+.team-item-name {
+  font-family: "Playfair Display", serif;
+  color: #111111;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.team-item-occupation {
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 995px) {
+  .team-header-desc {
+    width: 80%;
+  }
+  .team-item {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .team-header-desc {
+    width: 100%;
+  }
+}
+
+/* Client Say CSS */
+
+#say {
+  width: 100%;
+  height: auto;
+  padding: 9.5rem 0;
+  overflow: hidden;
+  background: url("../images/say-bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.say-header {
+  border-left: 1px solid #e8bf5d;
+  padding: 0 1.5rem;
+  position: relative;
+  margin-bottom: 4rem;
+  z-index: 5;
+}
+
+.say-header::before {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  content: "04";
+  color: #272727;
+  font-size: 15rem;
+  z-index: -1;
+}
+
+.say-header-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.say-header-desc {
+  font-family: "Playfair Display", serif;
+  width: 50%;
+  color: #b9b9b9;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.say-img-box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.say-img {
+  width: 100%;
+  height: 100%;
+}
+
+.say-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.say-content i {
+  margin-right: 2rem;
+  color: #535251;
+}
+
+.say-content-box {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.say-content-desc {
+  font-size: 1.3rem;
+  color: #ffffff;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.say-content-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.say-content-occu {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 995px) {
+  .say-header-desc {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .say-header-desc {
+    width: 100%;
+  }
+}
+
+/* Publication CSS */
+
+#pub {
+  width: 100%;
+  height: auto;
+  padding: 9.5rem 0;
+  overflow: hidden;
+}
+
+.pub-header {
+  border-left: 1px solid #e8bf5d;
+  padding: 0 1.5rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.pub-header::before {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  content: "05";
+  color: #f3f3f3;
+  font-size: 15rem;
+  z-index: -1;
+}
+
+.pub-header-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #111111;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.pub-header-desc {
+  font-family: "Playfair Display", serif;
+  width: 50%;
+  color: #666666;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.pub-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid #e8bf5d;
+  margin-bottom: 2rem;
+}
+
+.pub-img-box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.pub-img {
+  width: 100%;
+  height: 100%;
+}
+
+.pub-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111111;
+}
+
+.pub-status {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.pub-author {
+  font-size: 1.3rem;
+}
+
+.pub-author em {
+  color: #7a7a7a;
+}
+
+.pub-author span {
+  color: #111111;
+}
+
+.pub-date {
+  color: #7a7a7a;
+  font-style: italic;
+}
+
+.pub-desc {
+  color: #7a7a7a;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+
+.pub-footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.pub-comments,
+.pub-share {
+  font-size: 1.4rem;
+}
+
+.pub-comments i,
+.pub-share i {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 995px) {
+  .pub-header-desc {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .pub-header-desc {
+    width: 100%;
+  }
+}
+
+/* FAQ CSS */
+
+#faq {
+  width: 100%;
+  height: auto;
+  padding: 9.5rem 0;
+  overflow: hidden;
+  background: #111111;
+}
+
+.faq-header {
+  border-left: 1px solid #e8bf5d;
+  padding: 0 1.5rem;
+  position: relative;
+  margin-bottom: 4rem;
+  z-index: 5;
+}
+
+.faq-header::before {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  content: "06";
+  color: #272727;
+  font-size: 15rem;
+  z-index: -1;
+}
+
+.faq-header-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.faq-header-desc {
+  font-family: "Playfair Display", serif;
+  width: 50%;
+  color: #b9b9b9;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.faq-board {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #e8bf5d;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.faq-text {
+  color: #e8bf5d;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.faq-text-1 {
+  color: #ffffff;
+}
+
+.faq-desc {
+  width: 100%;
+  height: 100%;
+  background: #e8bf5d;
+  border-radius: 2px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+.faq-desc-text {
+  color: #111111;
+  line-height: 3rem;
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 995px) {
+  .faq-header-desc {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .faq-header-desc {
+    width: 100%;
+  }
+}
+
+/* Contact CSS */
+
+#contact {
+  width: 100%;
+  height: auto;
+  padding: 9.5rem 0;
+  overflow: hidden;
+}
+
+.contact-header {
+  border-left: 1px solid #e8bf5d;
+  padding: 0 1.5rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.contact-header::before {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  content: "07";
+  color: #f3f3f3;
+  font-size: 15rem;
+  z-index: -1;
+}
+
+.contact-header-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #111111;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-header-desc {
+  font-family: "Playfair Display", serif;
+  width: 50%;
+  color: #666666;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.contact-box {
+  width: 80%;
+  height: auto;
+  padding: 5rem;
+  background: #ffffff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 0 0 100px #eeeeee;
+  border-radius: 3px;
+}
+
+.contact-group {
+  width: 100%;
+  height: 3rem;
+  background: transparent;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.5);
+  margin-bottom: 3rem;
+}
+
+.contact-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  color: rgb(185, 185, 185);
+}
+
+.contact-input::placeholder {
+  color: rgb(185, 185, 185);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.contact-group-textarea {
+  width: 100%;
+  height: 10rem;
+  background: transparent;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.5);
+  margin-bottom: 2rem;
+}
+
+.contact-textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  color: rgb(185, 185, 185);
+}
+
+.contact-textarea::placeholder {
+  color: rgb(185, 185, 185);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: #e8bf5d;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  padding: 1.1rem 2.5rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.contact-btn:hover {
+  background: #111111;
+  color: #e8bf5d;
+}
+
+.contact-btn:focus {
+  outline: none;
+}
+
+.contact-map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.contact-map-img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 995px) {
+  .contact-header-desc {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .contact-header-desc {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .contact-box {
+    width: 95%;
+  }
+}
+
+/* Footer CSS */
+
+#footer {
+  width: 100%;
+  height: auto;
+  padding: 2.5rem 0;
+  background: #111111;
+  overflow: hidden;
+}
+
+.footer-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copy {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.footer-social {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.footer-social i {
+  margin-left: 1.5rem;
+  color: #ffffff;
+}
